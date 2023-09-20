@@ -8,7 +8,7 @@ import { AppService } from './app.service'
   imports: [
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.d0lnwlc.mongodb.net/shop?retryWrites=true&w=majority`,
+      `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.d0lnwlc.mongodb.net/shop?retryWrites=true&w=majority`,
     ),
   ],
   controllers: [AppController],
